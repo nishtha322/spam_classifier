@@ -3,6 +3,11 @@ import pickle
 import string
 import nltk
 
+
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
 def transform_text(text):
     text = text.lower()
     text = nltk.word_tokenize(text)
